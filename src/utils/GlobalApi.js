@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://places.googleapis.com/v1/places';
+const BASE_URL = 'https://places.googleapis.com/v1/places:searchNearby';
 const API_KEY = '';
 
 const config = {
@@ -11,7 +11,8 @@ const config = {
       'places.displayName',
       'places.formattedAddress',
       'places.location',
-      'places.evChargerOptions',
+      'places.evChargeOptions',
+      'places.shortFormattedAddress',
       'places.photos',
     ],
   },
